@@ -1,0 +1,20 @@
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        String binaryString = in.next(); //input string
+        int count=0;// counter to count the number of 1's
+
+        //loop to check for each character
+        for(char ch:binaryString.toCharArray())
+        {
+            if(ch == '1')
+                count++;
+        }
+
+
+        System.out.print((count * (count - 1))/2); // printing possible pairs without considering repetition
+
+    }
+}
